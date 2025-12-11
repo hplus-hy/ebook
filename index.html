@@ -4,14 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Flipbook</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="turn.min.js"></script>
 <style>
-body { margin:0; display:flex; justify-content:center; align-items:center; background:#eee; height:100vh; }
-#flipbook { width:600px; height:800px; }
-.page { background-size: cover; background-position: center; }
+body { margin:0; background:#eee; display:flex; justify-content:center; align-items:center; height:100vh; }
+#flipbook {
+  width:90%;
+  max-width:600px;
+  aspect-ratio:188/257;
+}
+.page {
+  background-size: cover;
+  background-position: center;
+}
 </style>
 </head>
 <body>
+
 <div id="flipbook">
   <div class="page" style="background-image:url('pages/page-01.jpg');"></div>
   <div class="page" style="background-image:url('pages/page-02.jpg');"></div>
@@ -24,13 +33,19 @@ body { margin:0; display:flex; justify-content:center; align-items:center; backg
 </div>
 
 <script>
-document.addEventListener("DOMContentLoaded", function(){
+$(document).ready(function(){
   $("#flipbook").turn({
     width: $("#flipbook").width(),
     height: $("#flipbook").height(),
     autoCenter: true,
     elevation: 50,
-    gradients: true
+    gradients: true,
+    acceleration: true
+  });
+
+  // 반응형 처리
+  $(window).resize(function(){
+    $("#flipbook").turn("size", $("#flipbook").width(), $("#flipbook").height());
   });
 });
 </script>
