@@ -406,131 +406,69 @@
 
 <p class=HStyle0><span style='position:relative'>&lt;head&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
-<p class=HStyle0><span style='position:relative'>&lt;meta charset=&quot;utf-8&quot;&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&lt;meta charset=&quot;utf-8&quot;&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
-<p class=HStyle0><span style='position:relative'>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
-<p class=HStyle0><span style='position:relative'>&lt;title&gt;Flipbook&lt;/title&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&lt;title&gt;Flipbook Demo&lt;/title&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
-<p class=HStyle0><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&lt;style&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
-<p class=HStyle0><span style='position:relative'>&lt;style&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;body { margin: 0; background:#eaeaea; display:flex; justify-content:center; align-items:center; height:100vh; overflow:hidden; }</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;body {</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;#flipbook { width:800px; height:600px; }</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;margin: 0;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;#flipbook .page { width:800px; height:600px; }</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;background: #eaeaea;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;#flipbook .page img { width:100%; height:100%; object-fit:contain; display:block; }</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;display: flex;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
-
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;justify-content: center;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
-
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;align-items: center;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
-
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;height: 100vh;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
-
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;overflow: hidden;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
-
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;}</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&lt;/style&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
 <p class=HStyle0><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;#flipbook {</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&lt;!-- jQuery --&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;width: 800px;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js&quot;&gt;&lt;/script&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;height: 600px;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&lt;!-- turn.js : repository 로컬 파일 로드 --&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;}</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
-
-<p class=HStyle0><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
-
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;#flipbook .page {</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
-
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;width: 800px;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
-
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;height: 600px;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
-
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;}</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
-
-<p class=HStyle0><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
-
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;#flipbook .page img {</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
-
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;width: 100%;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
-
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;height: 100%;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
-
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;object-fit: contain;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
-
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;display: block;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
-
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;}</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
-
-<p class=HStyle0><span style='position:relative'>&lt;/style&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
-
-<p class=HStyle0><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
-
-<p class=HStyle0><span style='position:relative'>&lt;!-- jQuery --&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
-
-<p class=HStyle0><span style='position:relative'>&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js&quot;&gt;&lt;/script&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
-
-<p class=HStyle0><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
-
-<p class=HStyle0><span style='position:relative'>&lt;!-- turn.js (로컬 로드) --&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
-
-<p class=HStyle0><span style='position:relative'>&lt;script src=&quot;turn.min.js&quot;&gt;&lt;/script&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
-
-<p class=HStyle0><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&lt;script src=&quot;turn.min.js&quot;&gt;&lt;/script&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
 <p class=HStyle0><span style='position:relative'>&lt;/head&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
 <p class=HStyle0><span style='position:relative'>&lt;body&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
-<p class=HStyle0><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&lt;div id=&quot;flipbook&quot;&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
-<p class=HStyle0><span style='position:relative'>&lt;div id=&quot;flipbook&quot;&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;page&quot;&gt;&lt;img src=&quot;https://oobiofficial.speedgabia.com/test/pages/page-01.jpg&quot; /&gt;&lt;/div&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&lt;div class=&quot;page&quot;&gt;&lt;img src=&quot;https://oobiofficial.speedgabia.com/test/pages/page-01.jpg&quot;&gt;&lt;/div&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;page&quot;&gt;&lt;img src=&quot;https://oobiofficial.speedgabia.com/test/pages/page-02.jpg&quot; /&gt;&lt;/div&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&lt;div class=&quot;page&quot;&gt;&lt;img src=&quot;https://oobiofficial.speedgabia.com/test/pages/page-02.jpg&quot;&gt;&lt;/div&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;page&quot;&gt;&lt;img src=&quot;https://oobiofficial.speedgabia.com/test/pages/page-03.jpg&quot; /&gt;&lt;/div&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&lt;div class=&quot;page&quot;&gt;&lt;img src=&quot;https://oobiofficial.speedgabia.com/test/pages/page-03.jpg&quot;&gt;&lt;/div&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;page&quot;&gt;&lt;img src=&quot;https://oobiofficial.speedgabia.com/test/pages/page-04.jpg&quot; /&gt;&lt;/div&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&lt;div class=&quot;page&quot;&gt;&lt;img src=&quot;https://oobiofficial.speedgabia.com/test/pages/page-04.jpg&quot;&gt;&lt;/div&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
-
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&lt;div class=&quot;page&quot;&gt;&lt;img src=&quot;https://oobiofficial.speedgabia.com/test/pages/page-05.jpg&quot;&gt;&lt;/div&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
-
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&lt;div class=&quot;page&quot;&gt;&lt;img src=&quot;https://oobiofficial.speedgabia.com/test/pages/page-06.jpg&quot;&gt;&lt;/div&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
-
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&lt;div class=&quot;page&quot;&gt;&lt;img src=&quot;https://oobiofficial.speedgabia.com/test/pages/page-07.jpg&quot;&gt;&lt;/div&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
-
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&lt;div class=&quot;page&quot;&gt;&lt;img src=&quot;https://oobiofficial.speedgabia.com/test/pages/page-08.jpg&quot;&gt;&lt;/div&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
-
-<p class=HStyle0><span style='position:relative'>&lt;/div&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&lt;/div&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
 <p class=HStyle0><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
-<p class=HStyle0><span style='position:relative'>&lt;script&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&lt;script&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;$(&quot;#flipbook&quot;).turn({</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;$(function(){</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;width: 800,</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$(&quot;#flipbook&quot;).turn({</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;height: 600,</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width: 800,</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;autoCenter: true,</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height: 600,</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;gradients: true,</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;autoCenter: true</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;elevation: 50</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
-<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;});</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&nbsp;&nbsp;});</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
-<p class=HStyle0><span style='position:relative'>&lt;/script&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
-
-<p class=HStyle0><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&lt;/script&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
 <p class=HStyle0><span style='position:relative'>&lt;/body&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
