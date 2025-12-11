@@ -1,46 +1,527 @@
 <!DOCTYPE html>
 <html lang="ko">
+<html>
 <head>
-<meta charset="UTF-8" />
-<title>Custom Flipbook</title>
-<script src="https://cdn.jsdelivr.net/gh/blasten/turn.js/turn.min.js"></script>
-<style>
-body {
-  margin: 0;
-  background:#e5e5e5;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  height:100vh;
+<meta name="Generator" content="Hancom HWP 12.30.0.6163">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title></title>
+<style type="text/css">
+*{
+	margin:0;
+	padding:0;
 }
-#flipbook {
-  width: 188mm;
-  height: 257mm;
+.HStyle0 {
+	style-name:"바탕글";
+	margin-top:0.0pt;
+	margin-bottom:0.0pt;
+	text-align:justify;
+	text-indent:0.0pt;
+	line-height:160%;
+	font-size:10.0pt;
+	font-family:함초롬바탕;
+	letter-spacing:0;
+	font-weight:normal;
+	font-style:normal;
+	color:#000000;
 }
-#flipbook .page {
-  background-color: white;
-  background-size: cover;
+.HStyle1 {
+	style-name:"본문";
+	margin-left:15.0pt;
+	margin-top:0.0pt;
+	margin-bottom:0.0pt;
+	text-align:justify;
+	text-indent:0.0pt;
+	line-height:160%;
+	font-size:10.0pt;
+	font-family:함초롬바탕;
+	letter-spacing:0;
+	font-weight:normal;
+	font-style:normal;
+	color:#000000;
+}
+.HStyle2 {
+	style-name:"개요 1";
+	margin-left:10.0pt;
+	margin-top:0.0pt;
+	margin-bottom:0.0pt;
+	text-align:justify;
+	text-indent:0.0pt;
+	line-height:160%;
+	font-size:10.0pt;
+	font-family:함초롬바탕;
+	letter-spacing:0;
+	font-weight:normal;
+	font-style:normal;
+	color:#000000;
+}
+.HStyle3 {
+	style-name:"개요 2";
+	margin-left:20.0pt;
+	margin-top:0.0pt;
+	margin-bottom:0.0pt;
+	text-align:justify;
+	text-indent:0.0pt;
+	line-height:160%;
+	font-size:10.0pt;
+	font-family:함초롬바탕;
+	letter-spacing:0;
+	font-weight:normal;
+	font-style:normal;
+	color:#000000;
+}
+.HStyle4 {
+	style-name:"개요 3";
+	margin-left:30.0pt;
+	margin-top:0.0pt;
+	margin-bottom:0.0pt;
+	text-align:justify;
+	text-indent:0.0pt;
+	line-height:160%;
+	font-size:10.0pt;
+	font-family:함초롬바탕;
+	letter-spacing:0;
+	font-weight:normal;
+	font-style:normal;
+	color:#000000;
+}
+.HStyle5 {
+	style-name:"개요 4";
+	margin-left:40.0pt;
+	margin-top:0.0pt;
+	margin-bottom:0.0pt;
+	text-align:justify;
+	text-indent:0.0pt;
+	line-height:160%;
+	font-size:10.0pt;
+	font-family:함초롬바탕;
+	letter-spacing:0;
+	font-weight:normal;
+	font-style:normal;
+	color:#000000;
+}
+.HStyle6 {
+	style-name:"개요 5";
+	margin-left:50.0pt;
+	margin-top:0.0pt;
+	margin-bottom:0.0pt;
+	text-align:justify;
+	text-indent:0.0pt;
+	line-height:160%;
+	font-size:10.0pt;
+	font-family:함초롬바탕;
+	letter-spacing:0;
+	font-weight:normal;
+	font-style:normal;
+	color:#000000;
+}
+.HStyle7 {
+	style-name:"개요 6";
+	margin-left:60.0pt;
+	margin-top:0.0pt;
+	margin-bottom:0.0pt;
+	text-align:justify;
+	text-indent:0.0pt;
+	line-height:160%;
+	font-size:10.0pt;
+	font-family:함초롬바탕;
+	letter-spacing:0;
+	font-weight:normal;
+	font-style:normal;
+	color:#000000;
+}
+.HStyle8 {
+	style-name:"개요 7";
+	margin-left:70.0pt;
+	margin-top:0.0pt;
+	margin-bottom:0.0pt;
+	text-align:justify;
+	text-indent:0.0pt;
+	line-height:160%;
+	font-size:10.0pt;
+	font-family:함초롬바탕;
+	letter-spacing:0;
+	font-weight:normal;
+	font-style:normal;
+	color:#000000;
+}
+.HStyle9 {
+	style-name:"개요 8";
+	margin-left:80.0pt;
+	margin-top:0.0pt;
+	margin-bottom:0.0pt;
+	text-align:justify;
+	text-indent:0.0pt;
+	line-height:160%;
+	font-size:10.0pt;
+	font-family:함초롬바탕;
+	letter-spacing:0;
+	font-weight:normal;
+	font-style:normal;
+	color:#000000;
+}
+.HStyle10 {
+	style-name:"개요 9";
+	margin-left:90.0pt;
+	margin-top:0.0pt;
+	margin-bottom:0.0pt;
+	text-align:justify;
+	text-indent:0.0pt;
+	line-height:160%;
+	font-size:10.0pt;
+	font-family:함초롬바탕;
+	letter-spacing:0;
+	font-weight:normal;
+	font-style:normal;
+	color:#000000;
+}
+.HStyle11 {
+	style-name:"개요 10";
+	margin-left:100.0pt;
+	margin-top:0.0pt;
+	margin-bottom:0.0pt;
+	text-align:justify;
+	text-indent:0.0pt;
+	line-height:160%;
+	font-size:10.0pt;
+	font-family:함초롬바탕;
+	letter-spacing:0;
+	font-weight:normal;
+	font-style:normal;
+	color:#000000;
+}
+.HStyle12 {
+	style-name:"쪽 번호";
+	margin-top:0.0pt;
+	margin-bottom:0.0pt;
+	text-align:justify;
+	text-indent:0.0pt;
+	line-height:160%;
+	font-size:10.0pt;
+	font-family:함초롬돋움;
+	letter-spacing:0;
+	font-weight:normal;
+	font-style:normal;
+	color:#000000;
+}
+.HStyle13 {
+	style-name:"머리말";
+	margin-top:0.0pt;
+	margin-bottom:0.0pt;
+	text-align:justify;
+	text-indent:0.0pt;
+	line-height:150%;
+	font-size:9.0pt;
+	font-family:함초롬돋움;
+	letter-spacing:0;
+	font-weight:normal;
+	font-style:normal;
+	color:#000000;
+}
+.HStyle14 {
+	style-name:"각주";
+	margin-left:13.1pt;
+	margin-top:0.0pt;
+	margin-bottom:0.0pt;
+	text-align:justify;
+	text-indent:-13.1pt;
+	line-height:130%;
+	font-size:9.0pt;
+	font-family:함초롬바탕;
+	letter-spacing:0;
+	font-weight:normal;
+	font-style:normal;
+	color:#000000;
+}
+.HStyle15 {
+	style-name:"미주";
+	margin-left:13.1pt;
+	margin-top:0.0pt;
+	margin-bottom:0.0pt;
+	text-align:justify;
+	text-indent:-13.1pt;
+	line-height:130%;
+	font-size:9.0pt;
+	font-family:함초롬바탕;
+	letter-spacing:0;
+	font-weight:normal;
+	font-style:normal;
+	color:#000000;
+}
+.HStyle16 {
+	style-name:"메모";
+	margin-top:0.0pt;
+	margin-bottom:0.0pt;
+	text-align:left;
+	text-indent:0.0pt;
+	line-height:130%;
+	font-size:9.0pt;
+	font-family:함초롬돋움;
+	letter-spacing:-5%;
+	font-weight:normal;
+	font-style:normal;
+	color:#000000;
+}
+.HStyle17 {
+	style-name:"차례 제목";
+	margin-top:12.0pt;
+	margin-bottom:3.0pt;
+	text-align:left;
+	text-indent:0.0pt;
+	line-height:160%;
+	font-size:16.0pt;
+	font-family:함초롬돋움;
+	letter-spacing:0;
+	font-weight:normal;
+	font-style:normal;
+	color:#2e74b5;
+}
+.HStyle18 {
+	style-name:"차례 1";
+	margin-top:0.0pt;
+	margin-bottom:7.0pt;
+	text-align:left;
+	text-indent:0.0pt;
+	line-height:160%;
+	font-size:11.0pt;
+	font-family:함초롬돋움;
+	letter-spacing:0;
+	font-weight:normal;
+	font-style:normal;
+	color:#000000;
+}
+.HStyle19 {
+	style-name:"차례 2";
+	margin-left:11.0pt;
+	margin-top:0.0pt;
+	margin-bottom:7.0pt;
+	text-align:left;
+	text-indent:0.0pt;
+	line-height:160%;
+	font-size:11.0pt;
+	font-family:함초롬돋움;
+	letter-spacing:0;
+	font-weight:normal;
+	font-style:normal;
+	color:#000000;
+}
+.HStyle20 {
+	style-name:"차례 3";
+	margin-left:22.0pt;
+	margin-top:0.0pt;
+	margin-bottom:7.0pt;
+	text-align:left;
+	text-indent:0.0pt;
+	line-height:160%;
+	font-size:11.0pt;
+	font-family:함초롬돋움;
+	letter-spacing:0;
+	font-weight:normal;
+	font-style:normal;
+	color:#000000;
+}
+.HStyle21 {
+	style-name:"캡션";
+	margin-top:0.0pt;
+	margin-bottom:8.0pt;
+	text-align:justify;
+	text-indent:0.0pt;
+	line-height:150%;
+	font-size:10.0pt;
+	font-family:함초롬바탕;
+	letter-spacing:0;
+	font-weight:normal;
+	font-style:normal;
+	color:#000000;
 }
 </style>
+<script type="text/javascript">
+		var adjustStyle = function(borderWidth) {
+ 		var value = borderWidth.match(/([\d\.]+)(%|px|cm|em|in|mm|pc|pt|)/) || [0, 0, ''];
+ 		var width = parseFloat(value[1]);
+ 		var unit = value[2];
+ 		if (unit == 'cm') {
+ 			if (width > 0.0 && width < 0.03) {
+ 				width = 0.03;
+ 			}
+ 		} else if (unit == 'in') {
+ 			if (width > 0.0 && width < 0.02) {
+ 				width = 0.02;
+ 			}
+ 		} else if (unit == 'mm') {
+ 			if (width > 0.0 && width < 0.3) {
+ 				width = 0.3;
+ 			}
+ 		} else if (unit == 'pc') {
+ 			if (width > 0.0 && width < 0.07) {
+ 				width = 0.07;
+ 			}
+ 		} else if (unit == 'px') {
+ 			if (width > 0.0 && width < 1.0) {
+ 				width = 1.0;
+ 			}
+ 		} else if (unit == 'pt') {
+ 			if (width > 0.0 && width < 0.8) {
+ 				width = 0.8;
+ 			}
+ 		} else if (unit == 'em') {
+ 			/* do not support */
+ 		} else if (unit == '%') {
+ 			/* do not support */
+ 		}
+ 		borderWidth = width + unit;
+ 		return borderWidth; 	};
+ 	(function() {
+ 		if (navigator.userAgent.match(/AppleWebKit/g) != null) {
+ 			for (var shIndex = 0; shIndex< document.styleSheets.length; shIndex++) {
+ 				var styleSheet = document.styleSheets[shIndex];
+ 				var rules = styleSheet.rules;
+ 				for (var rlIndex = 0; rlIndex < rules.length; rlIndex++) {
+ 					var rule = rules[rlIndex];
+ 					rule.style.borderLeftWidth=adjustStyle(rule.style.borderLeftWidth);
+ 					rule.style.borderRightWidth=adjustStyle(rule.style.borderRightWidth);
+ 					rule.style.borderTopWidth=adjustStyle(rule.style.borderTopWidth);
+ 					rule.style.borderBottomWidth=adjustStyle(rule.style.borderBottomWidth);
+ 				}
+ 			}
+ 		}
+ 	})();
+ 	window.onload = function(){
+ 		if (navigator.userAgent.match(/AppleWebKit/g) != null) {
+ 			var styledElms = document.querySelectorAll('*[style]');
+ 			for (var loop = 0; loop < styledElms.length; loop++) {
+ 				var elm = styledElms[loop];
+ 				elm.style.borderLeftWidth=adjustStyle(elm.style.borderLeftWidth);
+ 				elm.style.borderRightWidth=adjustStyle(elm.style.borderRightWidth);
+ 				elm.style.borderTopWidth=adjustStyle(elm.style.borderTopWidth);
+ 				elm.style.borderBottomWidth=adjustStyle(elm.style.borderBottomWidth);
+ 			}
+ 		}
+ 	};
+</script>
 </head>
 <body>
 
-<div id="flipbook">
-  <div class="page" style="background-image:url('pages/1.jpg');"></div>
-  <div class="page" style="background-image:url('pages/2.jpg');"></div>
-</div>
+<p class=HStyle0><span style='position:relative'>&lt;!DOCTYPE html&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
-<script>
-document.addEventListener("DOMContentLoaded", function(){
-  document.getElementById("flipbook").turn({
-    width: 188 * 3.78,
-    height: 257 * 3.78,
-    autoCenter: true,
-    elevation: 50,
-    gradients: true
-  });
-});
-</script>
+<p class=HStyle0><span style='position:relative'>&lt;html lang=&quot;ko&quot;&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&lt;head&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&lt;meta charset=&quot;UTF-8&quot;&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&lt;title&gt;Responsive Swipe Flipbook&lt;/title&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&lt;/head&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&lt;body&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&lt;style&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>body, html {</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;margin:0; padding:0;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;height:100%;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;display:flex;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;justify-content:center;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;align-items:center;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;background:#e5e5e5;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;font-family: system-ui, sans-serif;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>}</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>.flipbook-wrapper {</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;width:90%;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;max-width:600px;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;height:80vh;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;overflow-x: auto;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;scroll-snap-type: x mandatory;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;display: flex;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;border-radius:6px;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;box-shadow: 0 10px 30px rgba(0,0,0,0.25);</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;background:#fff;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>}</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>.page {</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;flex: 0 0 100%;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;scroll-snap-align: start;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;background-size: cover;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;background-position: center;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>}</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>/* 스크롤바 숨기기 */</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>.flipbook-wrapper::-webkit-scrollbar { display:none; }</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>.flipbook-wrapper { -ms-overflow-style: none; scrollbar-width: none; }</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&lt;/style&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&lt;div class=&quot;flipbook-wrapper&quot;&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&lt;div class=&quot;page&quot; style=&quot;background-image:url('pages/page-01.jpg');&quot;&gt;&lt;/div&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&lt;div class=&quot;page&quot; style=&quot;background-image:url('pages/page-02.jpg');&quot;&gt;&lt;/div&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&lt;div class=&quot;page&quot; style=&quot;background-image:url('pages/page-03.jpg');&quot;&gt;&lt;/div&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&lt;div class=&quot;page&quot; style=&quot;background-image:url('pages/page-04.jpg');&quot;&gt;&lt;/div&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&lt;div class=&quot;page&quot; style=&quot;background-image:url('pages/page-05.jpg');&quot;&gt;&lt;/div&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&lt;div class=&quot;page&quot; style=&quot;background-image:url('pages/page-06.jpg');&quot;&gt;&lt;/div&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&lt;div class=&quot;page&quot; style=&quot;background-image:url('pages/page-07.jpg');&quot;&gt;&lt;/div&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&nbsp;&nbsp;&lt;div class=&quot;page&quot; style=&quot;background-image:url('pages/page-08.jpg');&quot;&gt;&lt;/div&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&lt;/div&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&lt;/body&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span style='position:relative'>&lt;/html&gt;</span><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
+
+<p class=HStyle0><span class="hnc_page_break" style="display:relative;word-spacing:-0.5em;">&nbsp;</span></p>
 
 </body>
+
 </html>
